@@ -1,0 +1,174 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Lobby Section */
+#lobby {
+    width: 90%;
+    max-width: 800px;
+    background-color: #282846;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+/* Top Bar for Rank and Currency */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333356;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#rank {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+#currency {
+    font-size: 1.1em;
+}
+
+#currency span {
+    margin-right: 20px;
+}
+
+/* Dragon Info Section */
+#dragon-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#dragon-info h2 {
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+#selected-dragon {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+#dragon-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+/* Food Buttons */
+.food-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.food-buttons button {
+    width: 80%;
+    background-color: #444476;
+    color: #fff;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.food-buttons button:hover {
+    background-color: #606090;
+}
+
+/* Shop Section */
+#shop {
+    background-color: #282846;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+    display: none;
+}
+
+#shop h2 {
+    color: #ffd700;
+}
+
+.dragon-options button {
+    background-color: #333356;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.dragon-options button:hover {
+    background-color: #606090;
+}
+
+#auth {
+    width: 300px;
+    background-color: #282846;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+    color: #e0e0e0;
+}
+
+#auth input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#auth button {
+    width: 100%;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#auth button:hover {
+    background-color: #ff6347;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Battle Game</title>
+    <link rel="stylesheet" href="code1.css">
+<body>
+    <!-- Lobby Section -->
+    <div id="lobby">
+        <div class="top-bar">
+            <div id="rank">Current Rank: Wood</div>
+            <div id="currency">
+                <span id="diamonds">💎 Diamonds: 1000</span>
+                <span id="coins">💰 Coins: 5000</span>
+            </div>
+            <button onclick="openShop()">Shop</button>
+        </div>
+        
+        <div id="dragon-info">
+            <h2>Available Dragons</h2>
+            <img src=".vscode/orig.webp" alt="Dragon" id="selected-dragon">
+            <p>Dragon Type: <span id="dragon-type">Air</span></p>
+            <p>Level: <span id="dragon-level">1</span></p>
+            <button onclick="startBattle()">Start Battle</button>
+            <button onclick="levelUpDragon()">Level Up Dragon</button>
+        </div>
+
+        <div class="food-buttons">
+            <button onclick="purchaseFood(1)">Level 1 Food - 1000 Coins</button>
+            <button onclick="purchaseFood(2)">Level 2 Food - 1800 Coins</button>
+            <button onclick="purchaseFood(5)">Level 5 Food - 4500 Coins</button>
+            <button onclick="purchaseFood(10)">Level 10 Food - 9000 Coins</button>
+        </div>
+    </div>
+
+    <!-- Shop Section -->
+    <div id="shop" style="display: none;">
+        <h2>Shop</h2>
+        <div class="dragon-options">
+            <button onclick="buyDragon('fire', 1300)">Fire Dragon - 1300 Diamonds</button>
+            <button onclick="buyDragon('lava', 1600)">Lava Dragon - 1600 Diamonds</button>
+            <button onclick="buyDragon('water', 900)">Water Dragon - 900 Diamonds</button>
+            <button onclick="buyDragon('air', 400)">Air Dragon - 400 Diamonds</button>
+            <button onclick="buyDragon('laser', 600)">Laser Dragon - 600 Diamonds</button>
+            <button onclick="buyDragon('earth', 800)">Earth Dragon - 800 Diamonds</button>
+            <button onclick="buyDragon('electric', 200)">Electric Dragon - 200 Diamonds</button>
+        </div>
+        <button onclick="closeShop()">Close Shop</button>
+    </div>
+
+    <!-- Battle Section -->
+    <div id="battle" style="display: none;">
+        <div class="battle-container">
+            <div class="dragon player">
+                <h3>Your Dragon</h3>
+                <img sr=".vscode/electricity_dragon_by_astralgate_dgk45ud-414w-2x.jpg""    alt="Player Dragon">
+                <div class="health-bar" id="player-health">Health: 1000</div>
+                <div class="abilities">
+                    <button onclick="useAbility('fire')">dragon Skill</button>
+                    <button onclick="useAbility('water')">puch</button>
+                    <button onclick="useAbility('Air')">kick</button>  
+                </div>
+            </div>
+            <div class="dragon opponent">
+                <h3>Opponent Dragon</h3>
+                <img src=".vscode/electricity_dragon_by_astralgate_dgk45ud-414w-2x.jpg" alt=>
+                <div class="health-bar" id="opponent-health">Health: 1000</div>
+            </div>
+        </div>
+        <button onclick="backToLobby()">Back to Lobby</button>
+    </div>
+    <!-- Sign-In/Sign-Up Section -->
+<div id="auth">
+    <h2>Dragon Battle Game</h2>
+    <div id="login-section">
+        <h3>Login</h3>
+        <input type="text" id="login-username" placeholder="Username">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="signup-section">
+        <h3>Sign Up</h3>
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="password" id="signup-password" placeholder="Password">
+        <button onclick="signup()">Sign Up</button>
+    </div>
+    <div id="auth-error" style="color: red; margin-top: 10px;"></div>
+
+
+
+
+
+
+
+    <script src="anay.js"></script>
+</body>
+</html>
